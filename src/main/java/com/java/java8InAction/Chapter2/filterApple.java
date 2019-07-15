@@ -2,6 +2,7 @@ package com.java.java8InAction.Chapter2;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 public class filterApple {
 
@@ -96,5 +97,8 @@ public class filterApple {
 		
 		Thread t2 = new Thread(() -> System.out.println("hello"));
 		t2.start();
+		
+		redApple = Optional.ofNullable(redApple).orElseGet(null);
+		
 	}
 }
