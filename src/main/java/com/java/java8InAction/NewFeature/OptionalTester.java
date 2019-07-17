@@ -40,6 +40,10 @@ public class OptionalTester {
 		
 		System.out.println(str4);
 		
+		Optional.ofNullable(str).orElseThrow(() -> new NullPointerException());
+		
+		
+		
 	}
 
 }
